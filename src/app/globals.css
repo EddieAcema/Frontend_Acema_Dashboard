@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  /*Colores principales*/
+  /* --color-title: #1F3F7A; */
+  /* --color-primary: #1a3a5c;  */
+  --color-primary: #1F3F7A;
+  --color-primary-light: #2563a8;  /* Azul medio - acentos */
+  --color-accent: #2e7d32;         /* Verde - KPIs positivos */
+  --color-accent-light: #4caf50;   /* Verde claro - gráficos */
+  --color-warning: #e53935;        /* Rojo - desviaciones negativas */
+
+  /* Fondos */
+  --color-bg-page: #f4f6f8;
+  --color-bg-card: #ffffff;
+  /* --color-bg-header: #1a3a5c; */
+  --color-bg-kpi: #1e4976;
+
+  /* Bordes y sombras */
+  --color-border: #dde3ea;
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+  /* Tipografía */
+  --font-sans: var(--font-geist-sans); 
+
+  /*Espacios del dashboard*/
+  --dashboard-max-width: 1280px;
+  --dashboard-padding: 1.5rem;
+
+}
+
+body{
+  background-color: var(--color-bg-page);
+  color: var(--color-primary);
+  font-family: var(--font-sans), Arial, sans-serif;  
+}
