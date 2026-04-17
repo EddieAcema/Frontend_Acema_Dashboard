@@ -1,17 +1,16 @@
 import type { ComponentType, SVGProps } from "react";
-
-type KpiCardVariant = "primary" | "success" | "factor";
+import type { KpiVariant } from "@/types/dashboard";
 
 interface KpiCardProps {
   title: string;
   value: string;
   unit?: string;
-  variant?: KpiCardVariant;
+  variant?: KpiVariant;
   Icon?: ComponentType<SVGProps<SVGSVGElement>>;
 }
 
 // Definimos estilos para cada variante de KPI
-const variantClasses: Record<KpiCardVariant, string> = {
+const variantClasses: Record<KpiVariant, string> = {
   primary: "bg-(--color-bg-kpi) text-white",
   success: "bg-(--color-accent) text-white",
   factor: "bg-(--color-bg-factor) text-white",

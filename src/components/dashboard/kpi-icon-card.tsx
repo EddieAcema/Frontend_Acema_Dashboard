@@ -1,14 +1,13 @@
 import Image from "next/image";
-
-type KpiIconCardVariant = "primary" | "success" | "factor";
+import type { KpiVariant } from "@/types/dashboard";
 
 interface KpiIconCardProps {
   imageSrc: string;
   alt: string;
-  variant?: KpiIconCardVariant;
+  variant?: KpiVariant;
 }
 
-const variantClasses: Record<KpiIconCardVariant, string> = {
+const variantClasses: Record<KpiVariant, string> = {
   primary: "bg-(--color-bg-kpi)",
   success: "bg-(--color-accent)",
   factor: "bg-(--color-bg-factor)",

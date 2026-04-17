@@ -53,6 +53,25 @@ export interface DashboardKpis {
   capacityFactorPct: number;
 }
 
+export type KpiVariant = "primary" | "success" | "factor";
+
+export interface MetricKpiItem {
+  type: "metric";
+  title: string;
+  value: string;
+  unit?: string;
+  variant?: KpiVariant;
+}
+
+export interface IconKpiItem {
+  type: "icon";
+  imageSrc: string;
+  alt: string;
+  variant?: KpiVariant;
+}
+
+export type KpiItem = MetricKpiItem | IconKpiItem;
+
 export interface GenerationSeriesItem {
   hour: string;
   generationKw: number;

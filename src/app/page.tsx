@@ -5,27 +5,13 @@ import { KpiCard } from "@/components/dashboard/kpi-card";
 import { KpiIconCard } from "@/components/dashboard/kpi-icon-card";
 import { getValleduparMockData } from "@/services/dashboard.service";
 import { GenerationPowerSection } from "@/components/dashboard/generation-power-section";
-
-type MetricKpiItem = {
-  type: "metric";
-  title: string;
-  value: string;
-  unit?: string;
-  variant?: "primary" | "success" | "factor";
-};
-
-type IconKpiItem = {
-  type: "icon";
-  imageSrc: string;
-  alt: string;
-  variant?: "primary" | "success" | "factor";
-};
+import type { KpiItem } from "@/types/dashboard";
 
 export default async function Home() {
 
   const data = await getValleduparMockData();
 
-  const kpiItems: Array<MetricKpiItem | IconKpiItem> = [
+  const kpiItems: KpiItem[] = [
     {
       type: "metric",
       title: "Energía generada",
