@@ -21,7 +21,7 @@ interface GenerationPowerChartProps {
 export function GenerationPowerChart({ series}: GenerationPowerChartProps) {
     
   return (
-    <div className="h-80 rounded-lg border border-(--color-border) bg-white p-4">
+    <div className="h-80 rounded-lg bg-white">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={series} margin={{ top: 12, right: 16, left: 8, bottom: 8 }}>
           <CartesianGrid stroke="#d9e2ec" strokeDasharray="3 3" />

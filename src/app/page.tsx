@@ -10,7 +10,6 @@ import type { KpiItem } from "@/types/dashboard";
 export default async function Home() {
 
   const data = await getValleduparMockData();
-
   const kpiItems: KpiItem[] = [
     {
       type: "metric",
@@ -63,7 +62,7 @@ export default async function Home() {
       <div className="space-y-4">
         <DashboardHeader header={data.header} />
 
-        <section className="flex items-stretch gap-3">
+        <section className="flex items-stretch gap-3 mb-2">
           {kpiItems.map((item, index) => {
             if (item.type === "icon") {
               return (

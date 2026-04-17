@@ -19,7 +19,7 @@ const variantClasses: Record<KpiVariant, string> = {
 export function KpiCard({title, value, unit, variant = "primary",Icon,}: KpiCardProps) {
     
   return (
-    <article className={`w-max flex-1 rounded-lg px-4 py-2 shadow-sm h-20 ${variantClasses[variant]}`}>
+    <article className={`w-max flex-1 rounded-lg px-4 py-2 shadow-sm h-20 ${variantClasses[variant]} hover:scale-103`}>
       <div className="flex items-start justify-between">
         <div>
           <p className="text-[11px] uppercase tracking-wide opacity-90">

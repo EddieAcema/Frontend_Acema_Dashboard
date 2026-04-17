@@ -17,7 +17,7 @@ const variantClasses: Record<KpiVariant, string> = {
 export function KpiIconCard({ imageSrc, alt, variant = "primary"}: KpiIconCardProps) {
   return (
     <article className={`flex items-center justify-center 
-        rounded-lg w-18 ${variantClasses[variant]}`} >
+        rounded-lg w-18 ${variantClasses[variant]} hover:scale-103`} >
       <Image
         src={imageSrc}
         alt={alt}

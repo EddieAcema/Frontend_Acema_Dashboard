@@ -10,14 +10,14 @@ export function GenerationPowerSection({
   series,
 }: GenerationPowerSectionProps) {
   return (
-    <section className="rounded-lg border border-(--color-border) bg-(--color-bg-card) shadow-sm">
-      <header className="border-b border-(--color-border) px-4 py-3">
-        <h2 className="text-lg font-semibold uppercase tracking-wide text-(--color-primary)">
+    <section className=" w-3/5 rounded-lg bg-(--color-bg-card) shadow-sm">
+      <div className="border-b border-(--color-border) px-4 py-2">
+        <h2 className="text-md font-bold uppercase tracking-wide text-(--color-text-curve)">
           Generación y Curva de Potencia
         </h2>
-      </header>
+      </div>
 
-      <div className="grid gap-4 p-4 xl:grid-cols-[280px_minmax(0,1fr)]">
+      <div className="grid p-3 xl:grid-cols-[2.05fr_3fr]">
         <GenerationTable series={series} />
         <GenerationPowerChart series={series} />
       </div>

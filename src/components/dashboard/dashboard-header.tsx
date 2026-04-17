@@ -9,7 +9,7 @@ interface DashboardHeaderProps {
 
 export function DashboardHeader({ header }: DashboardHeaderProps) {
   return (
-    <header className="rounded-lg bg-(--color-bg-header) px-6 py-4 shadow-sm">
+    <header className="rounded-lg bg-(--color-bg-header) px-6 py-4 shadow-sm mb-2">
       <div className="flex items-center justify-between gap-6">
         <div>
           <h1 className="text-3xl font-semibold uppercase tracking-wide text-(--color-primary)">
