@@ -4,6 +4,7 @@ import { DashboardShell } from "@/components/dashboard/dashboard-shell";
 import { KpiCard } from "@/components/dashboard/kpi-card";
 import { KpiIconCard } from "@/components/dashboard/kpi-icon-card";
 import { getValleduparMockData } from "@/services/dashboard.service";
+import { GenerationPowerSection } from "@/components/dashboard/generation-power-section";
 
 type MetricKpiItem = {
   type: "metric";
@@ -100,6 +101,9 @@ export default async function Home() {
             );
           })}
         </section>
+
+        <GenerationPowerSection series={data.generationSeries} />
+        
       </div>
     </DashboardShell>
   );
